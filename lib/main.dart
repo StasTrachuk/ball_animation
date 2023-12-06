@@ -1,4 +1,3 @@
-import 'package:ball_animation/event_screen.dart';
 import 'package:ball_animation/simulation.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Demo',
-      home: EventScreen(),
+      home: AnimationTween(),
     );
   }
 }
