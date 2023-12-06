@@ -195,12 +195,6 @@ class _AnimationTweenState extends State<AnimationTween>
               ),
             ),
             const SizedBox(height: 10),
-            FloatingActionButton(
-              onPressed: () {
-                yCorrection = yCorrection - 0.1;
-              },
-              child: const Text('X'),
-            ),
           ],
         ),
       ),
@@ -248,7 +242,7 @@ class _AnimationTweenState extends State<AnimationTween>
           yCorrection);
 
   void trajectoryCalculator() {
-    ticker = ticker + 0.001;
+    ticker = ticker + 0.005;
 
     candidateY = calculateY();
     candidateX = calculateX();
@@ -289,7 +283,6 @@ class _AnimationTweenState extends State<AnimationTween>
 
     if (previousSpeed != null) {
       deltaSpeed = speed - previousSpeed!;
-      print(deltaSpeed);
     }
     previousSpeed = speed;
   }
